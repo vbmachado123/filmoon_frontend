@@ -1,0 +1,103 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Perfil</title>
+
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="cadPerfil.css">
+    
+    <script type="text/javascript" src="global.js"></script>
+
+    <link rel="shortcut icon" type="imagex/png" href="img/pet.png">
+</head>
+<body>
+    <main>
+        <h1>Criar Perfil</h1>
+        <br>
+        <h3>Você pode criar até 3 perfis.</h3>
+        
+        <img src="img/avblue.svg" width="150" height="150" id="myBtn">
+
+        <div id="CoresBtn">
+            <button type="button" id="roxo" class="btnCor"></button>
+            <button type="button" id="vermelho" class="btnCor"></button>
+            <button type="button" id="bege" class="btnCor"></button>
+            <button type="button" id="rosa" class="btnCor"></button>
+        </div>
+
+        <form>
+            <label for="nome">Nome de perfil</label>
+            <input type="text" id="nome">
+
+            <div id="infantil">
+                <label for="checkbox"><span>É um perfil infantil?</span></label>
+                
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        <div id="btn">
+            <button type="button" id="criar" onclick="location.href='quemAssiste.html';">Criar perfil</button>
+            <button type="button" id="cancelar">Cancelar</button>
+        </div>
+        </form>
+    </main>
+
+<!--MODAL-->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <article id="perfis">
+            <div id="perfil1">
+                <img src="img/Avatar Rosa.svg" class="imgAv">
+                <p class="nome_avatar">Cacau</p>
+            </div>
+            <div id="perfil2">
+                <img src="img/Avatar Roxo.svg" class="imgAv">
+                <p class="nome_avatar">Tom</p>
+            </div>
+            <div id="perfil3">
+                <img src="img/Avatar Verde.svg" class="imgAv">
+                <p class="nome_avatar">Chris</p>
+            </div>
+            <div id="perfil4">
+                <img src="img/Avatar Vermelho.svg" class="imgAv">
+                <p class="nome_avatar">Luna</p>
+            </div>
+        </article>
+    </div>
+  
+  </div>
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        var span2 = document.querySelector(".imgAv");
+        
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+//Fechar
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        span2.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+</body>
+</html>
