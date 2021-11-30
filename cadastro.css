@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400;500;600;700&display=swap');
+
+*{
+    margin: 0; 
+    font-family: 'Work Sans', sans-serif;
+}
+a{color: #DC602E;}
+body{
+    background-image: url(./img/backLogin.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+#pet{
+    width: 10%;
+    height: 20%;
+    align-self: flex-end;
+}
+
+
+main{
+    width: 30%;
+
+    height: 100%;
+
+    padding: 10% 05%;
+
+    float: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+
+    background-color: #E7ECEF;
+    border-radius:  0px 10px 10px 0px;
+}
+main img{
+    width: 90%;
+    margin-bottom: 15%;
+    align-self: center ;
+}
+form #nome, #email, #senha, button{
+    width: 100%;
+    height: 50px;
+
+    margin: 02% 0;
+
+    border: none;
+    border-radius:  10px;
+
+    box-shadow: 0 0 1em grey;
+}
+form button{
+    margin-top: 25%; /*ESPAÇAMENTO DA BORDA PARA FORA DO ELEMENTO APENAS NA PARTE SUPERIOR*/
+
+    font-weight: bold; /*FONTE EM NEGRITO*/
+    background-color: #DC602E; /*COR DE FUNDO DO ELEMENTO*/
+    color: white; /*COR DA FONTE DO ELEMENTO*/
+}

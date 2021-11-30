@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400;500;600;700&display=swap');
+
+*{
+    margin: 0; 
+    font-family: 'Work Sans', sans-serif;
+}
+a{color: #DC602E;}
+body{
+    background-image: url(./img/backLogin.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    display: flex;
+    justify-content: space-between;
+}
+#pet{
+    width: 10%;
+    height: 20%;
+    align-self: flex-end;
+
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+main{
+    width: 30%; /*TAMANHO EM RELAÇÃO AO EIXO HORIZONTAL*/
+
+    height: 100%;/*TAMANHO EM RELAÇÃO AO EIXO VERTICAL*/
+
+    padding: 10% 05%; /*ESPAÇAMENTO DA BORDA PARA DENTRO DO ELEMENTO*/
+
+    float: left;/*FLUTUAR À ESQUERDA*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    background-color: #E7ECEF; /*COR DE FUNDO*/
+    border-radius: 0px 10px 10px 0px; /*ARREDONDAMENTO DE BORDAS USANDO PONTAS ESPECIFICAS*/
+
+}
+main img{
+    width: 90%; /*TAMANHO EM RELAÇÃO AO EIXO HORIZONTAL*/
+    margin-bottom: 15%; /*ESPAÇAMENTO DA BORDA PARA FORA DO ELEMENTO APENAS NA PARTE DE BAIXO*/
+    align-self: center; /*AUTO ALINHAMENTO, SÓ FUNCIONA SE A PAI FOR FLEX-BOX*/
+}
+
+form{
+    /*NÃO FOI NECESSÁRIO ADICIONAR EDIÇÕES AO FORM*/
+}
+form #email, #senha, button{
+    width: 100%; /*TAMANHO EM RELAÇÃO AO EIXO HORIZONTAL*/
+    height: 50px; /*TAMANHO EM RELAÇÃO AO EIXO VERTICAL*/
+    
+        /* (CIMA/EMBAIXO) (LADOS) */
+    margin:     02%         0;/*ESPAÇAMENTO DA BORDA PARA FORA DO ELEMENTO 
+                                APENAS NA PARTE DE BAIXO E DE CIMA*/
+
+
+    border: none; /*REMOVER BORDA*/
+    border-radius: 10px; /*ARREDONDAR TODAS AS PONTAS*/
+
+            /* (TAMANHO) (COR) */
+    box-shadow: 0 0 1em grey; /*SOMBREAMENTO DA BORDA PARA FORA*/
+}
+form #email, #senha{padding: 05%;}
+form button{ 
+    margin-top: 25%; /*ESPAÇAMENTO DA BORDA PARA FORA DO ELEMENTO APENAS NA PARTE SUPERIOR*/
+
+    font-weight: bold; /*FONTE EM NEGRITO*/
+    background-color: #DC602E; /*COR DE FUNDO DO ELEMENTO*/
+    color: white; /*COR DA FONTE DO ELEMENTO*/
+}
+
+form #esqueciSenha{
+    text-align: right; /*ALINHAMENTO DE TEXTO À DIREITA*/
+    cursor: pointer; /*TROCAR O MOUSE PARA UMA MÃOZINHA AO PASSAR SOBRE*/
+}
+
+#semConta{
+    margin-top: 20%; /*ESPAÇAMENTO DA BORDA PARA FORA NA PARTE SUPERIOR*/
+    align-self: center; /*AUTOALINHAMENTO AO CENTRO, ESTE COMANDO SÓ FUNCIONA
+                         SE SUA DIV PAI FOR FLEX-BOX*/
+}
