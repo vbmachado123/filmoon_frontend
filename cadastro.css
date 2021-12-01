@@ -13,7 +13,21 @@ body{
     background-position: center;
     
     display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;    display: flex;
     justify-content: space-between;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
 
 #pet{
@@ -25,19 +39,14 @@ body{
 
 main{
     width: 30%;
-
     height: 100%;
-
     padding: 10% 05%;
-
     float: left;
-
     display: flex;
     flex-direction: column;
     justify-content:end;
-
     background-color: #E7ECEF;
-    border-radius:  0px 10px 10px 0px;
+    border-radius:  10px 0px 0px 10px;
 }
 main img{
     width: 90%;
