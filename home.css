@@ -1,0 +1,158 @@
+body h2{margin-left: 02%;}
+/*-------------HEADER---------*/
+header{
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: 500px;
+}
+
+/*-------------NAV---------*/
+nav{
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    padding: 1px 02%;
+
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    background-color: rgba(24,30,45, 0.8);
+    
+}
+.esquerda{width:50%;float: left;} 
+.direita{float: right;}
+
+#nav_avatar {
+    width: 50px;
+    object-fit: contain;
+}
+#nav_logo {
+    width: 100px;
+    object-fit: contain;
+}
+
+nav button{
+    margin: 0 02%;
+    background-color: transparent;
+    border: none;
+}
+nav button:hover{
+    background-color: rgba(24,30,45);
+}
+
+/*-------------BANNER (MAIN SECTION)---------*/
+main{
+    width: 100%;
+    padding: 05%;
+    height: auto;
+    
+    background-image: url('img/madMax.png');
+    background-size: cover;
+    background-position: center center;
+
+    display: flex;
+    align-items: center;
+   
+    justify-content:stretch;
+}
+
+.banner_contents{
+    background-color: transparent;
+    width: 50%;
+    float: left;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#logoFilme{
+    max-width:30%;
+    margin: 02% 0;
+}
+#botoes{
+    width: 50%;
+    margin: 02% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#verMaisBtn{
+    width: 50%;
+    height: 40px;
+    border: none;
+    background-color: rgba(24,30,45, 0.8);
+    border-radius: 10px;
+}
+#verMaisBtn:hover{
+    background-color: gray;
+}
+#play{
+    border:none;
+    border-radius: 50%;
+    background-color: rgba(24,30,45, 0.8);
+}
+#play:hover{background-color: gray;}
+
+
+.checked {
+    color: orange;
+  }
+  .checked_banner {
+    margin-top:145px;
+    height: 7.4rem;
+  }
+
+  /*----------CATEGORIAS-------*/
+#CategoriaPai{
+    width:100% ;
+    height:auto ;
+    background-color:transparent ;
+    display: flex;
+    align-items: center ;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 1%;
+  }
+.filha{
+  background-color: transparent;
+  padding: 3%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: rgb(253, 252, 252);
+  width: 10%;
+  font-size: medium;
+  }
+  
+  #idTerror{background-image: url('imagem3.jpg');}
+  #idSuspense{background-image: url('imagens/imagem4.jpg');}
+  #idRomance{background-image: url('imagens/imagem5.jpg') ;}
+  #idFiccao{background-image: url('imagens/imagem6.jpg');}
+  #idFantasia{background-image: url('imagens/imagem7.jpg');}
+  #idComedia{background-image: url('imagens/imagem8.jpg');}
+
+/*--------MOVIES--------------------------*/
+.movies{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: auto;
+
+    margin: 02% 0;
+}
+.movies::-webkit-scrollbar {
+    display: none;
+}
+.row_posterlarge {
+    max-height: 250px;
+    margin: 01px;
+}
